@@ -13,6 +13,7 @@ public class Main {
 		moto1.nomDelVehicle = Yamaha;
 		
 		moto1.arrenca();
+		
 	
 	
 	}	
