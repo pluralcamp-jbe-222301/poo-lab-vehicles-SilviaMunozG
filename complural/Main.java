@@ -1,10 +1,12 @@
 package complural;
 public class Main {
 
-	Car car = new Car();
+	public static void main(String[] args){
+		Car car1;
+		car1 = new Car();
+		car1.cv = 500;
+		
+		car1.radio();
 	
-	Moto moto = new Moto();
-	moto.asdas
-	
-	
+	}	
 }
