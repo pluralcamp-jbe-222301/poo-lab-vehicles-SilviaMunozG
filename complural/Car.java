@@ -1,6 +1,6 @@
 package complural;
 
-public class Car {
+public class Car extends Vehicles{
 	
 	String motor;
 	int cv;

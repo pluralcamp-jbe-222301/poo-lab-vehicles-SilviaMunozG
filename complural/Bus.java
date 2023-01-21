@@ -1,6 +1,4 @@
-package complural;
-
-public class Bus {
+public class Bus extends Vehicles {
 
 	String lineaBus;
 

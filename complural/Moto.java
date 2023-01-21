@@ -1,6 +1,6 @@
 package complural;
 
-public class Moto {
+public class Moto extends Vehicles{
 	
 	int numeroMarchas;
 	
