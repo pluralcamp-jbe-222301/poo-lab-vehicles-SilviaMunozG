@@ -1,20 +1,39 @@
 package complural;
 public class Main {
 
-	public static void main(String[] args){
-		Car car1;
-		car1 = new Car();
-		car1.cv = 500;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
 		
-		car1.radio();
+		Car coche = new Car();
+		coche.radio();
 		
-		Moto moto1;
-		moto1 = new Moto();
-		moto1.nomDelVehicle = Yamaha;
+		Bus autobus = new Bus();
+		autobus.parada();
 		
-		moto1.arrenca();
+		Moto motocicleta = new Moto();
+		motocicleta.adelanta();
 		
-	
-	
-	}	
+		Train tren = new Train();
+		tren.descarrila();
+		
+		Vehicles[] vehiculos = new Vehicles[] {coche,autobus,motocicleta,tren};
+		
+		for(Vehicles v : vehiculos) {
+			if(v instanceof Bus)
+				v.apaga();
+			else if(v instanceof Train)
+				v.arrenca();
+			else 
+				v.mou();
+		}
+		
+		Polluter[] contaminantes = new Polluter[] {coche,autobus,motocicleta};
+		
+		for(Polluter contaminante : contaminantes) {
+			contaminante.expulsaCO2();
+			contaminante.carburant();
+		}
+
+	}
+
 }
